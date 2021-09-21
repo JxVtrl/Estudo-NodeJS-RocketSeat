@@ -17,7 +17,5 @@
     "url": "https://github.com/JxVtrl/Estudo-NodeJS-RocketSeat/issues"
   },
   "homepage": "https://github.com/JxVtrl/Estudo-NodeJS-RocketSeat#readme",
-  "dependencies": {
-    "cfonts": "^2.10.0"
-  }
+  "dependencies": {}
 }
