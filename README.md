@@ -1,7 +1,7 @@
 # Estudo NODEJS
 
 ## Criar Projeto
-*Para iniciar o projeto, execute o comando:*
+*Para criar o projeto, execute o comando:*
 > npm init
 
 *ou se preferir, você pode usar o comando para setar as opções pedidas automaticamente:*
