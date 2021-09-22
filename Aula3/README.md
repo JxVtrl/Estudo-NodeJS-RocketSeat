@@ -13,13 +13,9 @@ index.html ➡ index.ejs
 ----------
 ### 📦 Instalando o EJS
 ##### Módulo EJS (HTML inteligente)
-~~~~
-- npm install ejs
-~~~~
+* `npm install ejs`
 ##### Módulo Express (Modulo que cria um servidor)
-~~~~
-- npm install express 
-~~~~
+* `npm install express`
 ----------
 ### ✨ Criando o arquivo *server.js*
 > O arquivo *server.js* é o responsável por iniciar o servidor e configurar o *EJS*
@@ -42,3 +38,17 @@ app.get('/', (req, res) => {
 ```
 app.listen(8080);
 ```
+### 🐱‍🏍 Rodando o arquivo *server.js*
+
+* `node server.js`
+
+### 📚 Modularizando o código
+> O arquivo *index.ejs* é responsável por agrupar os módulos *header*, *footer*, *navbar*, *content*, *etc*
+
+> Cada arquivo separadamente contém a sua tag correspondente e conteúdo
+
+> No index.ejs, podemos chamar a parte do código que queremos, basta chamar a tag a seguir
+```
+<%- include('nome-do-modulo'); %>
+```
+
