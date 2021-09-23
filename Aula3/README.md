@@ -71,13 +71,13 @@ app.listen(8080);
 
 *Tudo que for JS deve estar entre EJS tag, e tudo que for HTML não*
 ```
-<% array.forEach(array_item => { %> --> EJS abre e fecha
+<% array.forEach(array_item => { %> --> JS, com tag EJS
 
     <li>                            --> HTML, sem tag EJS
 
-        <strong><%= array_item.title %></strong> - <%= array_item.message %>
-                                    --> JS, com tag EJS
-    </li>
+        <%= array_item.content %>   --> JS, com tag EJS
+                                    
+    </li>                           --> HTML, sem tag EJS
 
-<% }); %>                           --> EJS abre e fecha
+<% }); %>                           --> JS, com tag EJS
 ```
