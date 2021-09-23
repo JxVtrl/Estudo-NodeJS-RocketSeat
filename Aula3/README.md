@@ -52,3 +52,32 @@ app.listen(8080);
 <%- include('nome-do-modulo'); %>
 ```
 
+> Caso queira passar um objeto pela tag, basta utilizar a seguinte sintaxe
+```
+<%- include('nome-do-modulo', {objeto: 'valor'}); %>
+```
+
+> Para exibir o conteúdo do objeto passado:
+```
+<%= objeto %>
+```
+
+> Identificando se foi passado um objeto:
+```
+<%= typeof pagina != 'undefined' ? pagina:'Default' %>
+```
+
+> Para exibir o conteúdo de um array em uma ul:
+
+*Tudo que for JS deve estar entre EJS tag, e tudo que for HTML não*
+```
+<% array.forEach(array_item => { %> --> EJS abre e fecha
+
+    <li>                            --> HTML, sem tag EJS
+
+        <strong><%= array_item.title %></strong> - <%= array_item.message %>
+                                    --> JS, com tag EJS
+    </li>
+
+<% }); %>                           --> EJS abre e fecha
+```
